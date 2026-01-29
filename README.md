@@ -1,120 +1,220 @@
 # 📚 Algorithmes – Index Complet
 
-Bienvenue dans ta bibliothèque d’algorithmes.  
-Ce fichier sert de guide pour naviguer rapidement entre les différents `.md`.
+Bienvenue dans ta **bibliothèque d’algorithmes**.
+Ce dépôt regroupe les **algorithmes fondamentaux** vus en cours et en pratique, organisés par **thématique** et **paradigme algorithmique**.
 
-Chaque section regroupe les algorithmes par thématique : Graphes, Arbres, Greedy, DP, Backtracking, etc.
+Chaque fichier `.md` :
 
----
-
-# 🧭 Navigation Rapide
-
-- [Graphes](#-graphes)
-- [Arbres](#-arbres)
-- [Greedy](#-greedy)
-- [Programmation Dynamique](#-programmation-dynamique--optimisation)
-- [Backtracking](#-backtracking)
-- [Grilles & Recherche 2D](#-grilles--recherche-2d)
-- [Jeux & Exploration d’Espace](#-jeux--exploration-despace)
-- [Problèmes Combinatoires / Branch & Bound](#-problèmes-combinatoires--branch--bound)
+* explique **quand utiliser l’algorithme**,
+* détaille **l’idée clé**,
+* fournit une **implémentation claire**,
+* met en avant les **liens avec d’autres algorithmes**.
 
 ---
 
-# 🌐 Graphes
+## 🧭 Navigation Rapide
+
+* [Graphes – Fondamentaux](#-graphes--fondamentaux)
+* [Graphes – Plus courts chemins](#-graphes--plus-courts-chemins)
+* [Graphes – Propriétés & Analyse](#-graphes--propriétés--analyse)
+* [Arbres](#-arbres)
+* [Greedy](#-greedy)
+* [Programmation Dynamique & Optimisation](#-programmation-dynamique--optimisation)
+* [Backtracking](#-backtracking)
+* [Grilles & Recherche 2D](#-grilles--recherche-2d)
+* [Jeux & Exploration d’Espace](#-jeux--exploration-despace)
+* [Problèmes Combinatoires / Branch & Bound](#-problèmes-combinatoires--branch--bound)
+* [Outils & Patterns transversaux](#-outils--patterns-transversaux)
+
+---
+
+## 🌐 Graphes – Fondamentaux
 
 ### 1. [BFS.md](BFS.md)
-Parcours en largeur, utile pour chemins minimaux non pondérés.
+
+Parcours en largeur – exploration niveau par niveau.
 
 ### 2. [DFS.md](DFS.md)
-Parcours en profondeur, détection de composantes, exploration.
 
-### 3. [Dijkstra.md](Dijkstra.md)
-Chemins les plus courts dans graphes pondérés (poids positifs).
+Parcours en profondeur – exploration, cycles, composantes.
 
-### 4. [check_if_biparti.md](check_if_biparti.md)
-Vérification de bipartition d’un graphe (coloration 2 couleurs).
+### 3. [Shortest Path – Unweighted Graph.md](Shortest%20Path%20–%20Unweighted%20Graph.md)
+
+Plus courts chemins dans un graphe non pondéré (BFS).
+
+### 4. [Flood Fill.md](Flood%20Fill.md)
+
+DFS/BFS appliqué aux grilles – remplissage de zones connexes.
 
 ### 5. [Counting Ships.md](Counting%20Ships.md)
-Détection de composantes dans une grille (DFS/BFS).
 
-### 6. [Avalanche Chain Reaction.md](Avalanche%20Chain%20Reaction.md)
-Propagations dirigées dans un graphe (reachability).
+Détection de composantes connexes dans une grille.
 
 ---
 
-# 🌲 Arbres
+## 🚦 Graphes – Plus courts chemins
+
+### 1. [Dijkstra.md](Dijkstra.md)
+
+Plus courts chemins avec poids positifs.
+
+### 2. [0-1 BFS.md](0-1%20BFS.md)
+
+Plus courts chemins avec poids 0 ou 1 (deque).
+
+### 3. [Bellman-Ford.md](Bellman-Ford.md)
+
+Poids négatifs + détection de cycles négatifs.
+
+### 4. [Floyd-Warshall.md](Floyd-Warshall.md)
+
+Plus courts chemins entre **toutes les paires**.
+
+### 5. [Minimum Effort Path – Dijkstra Minimax.md](Minimum%20Effort%20Path%20–%20Dijkstra%20Minimax.md)
+
+Minimisation du maximum d’arête (minimax path).
+
+---
+
+## 🧠 Graphes – Propriétés & Analyse
+
+### 1. [check_if_biparti.md](check_if_biparti.md)
+
+Test de bipartition (coloration 2 couleurs).
+
+### 2. [Cycle Detection.md](Cycle%20Detection.md)
+
+Détection de cycles (graphes orientés / non orientés).
+
+### 3. [Topological Sort.md](Topological%20Sort.md)
+
+Ordonnancement de dépendances (DAG).
+
+### 4. [Strongly Connected Components.md](Strongly%20Connected%20Components.md)
+
+SCC – Kosaraju & Tarjan.
+
+### 5. [Avalanche Chain Reaction.md](Avalanche%20Chain%20Reaction.md)
+
+Propagation et reachability dans un graphe dirigé.
+
+---
+
+## 🌲 Arbres
 
 ### 1. [Diameter of a tree.md](Diameter%20of%20a%20tree.md)
-Calcul du diamètre via double BFS.
+
+Calcul du diamètre via double BFS/DFS.
 
 ### 2. [MST.md](MST.md)
-Arbre couvrant minimal – Prim/Kruskal.
 
-### 3. [Digitec – Livraison au jour même.md](Digitec%20–%20Livraison%20au%20jour%20même.md)
-Pruning d’un arbre + distance de lancer.
+Arbre couvrant minimal – Prim & Kruskal.
+
+### 3. [Union Find (Disjoint Set Union).md](Union%20Find%20%28Disjoint%20Set%20Union%29.md)
+
+Gestion de composantes disjointes (DSU).
+
+### 4. [Lowest Common Ancestor.md](Lowest%20Common%20Ancestor.md)
+
+LCA par binary lifting.
+
+### 5. [Digitec – Livraison au jour même.md](Digitec%20–%20Livraison%20au%20jour%20même.md)
+
+Pruning d’arbre + distance maximale autorisée.
 
 ---
 
-# ⚡ Greedy
+## ⚡ Greedy
 
-### 1. [Goose Game.md](Goose%20Game.md)
-Jump Game II – nombre minimal de sauts.
+### 1. [Greedy Algorithms.md](Greedy%20Algorithms.md)
+
+Paradigme glouton – principes et limites.
+
+### 2. [Goose Game.md](Goose%20Game.md)
+
+Jump Game II – minimisation du nombre de sauts.
 
 ---
 
-# 🧮 Programmation Dynamique / Optimisation
+## 🧮 Programmation Dynamique & Optimisation
 
 ### 1. [fibonacci.md](fibonacci.md)
-DP itératif et exponentiation rapide pour Fibonacci.
+
+DP, optimisation mémoire, fast doubling.
 
 ### 2. [kadane_maxProfit.md](kadane_maxProfit.md)
+
 Algorithme de Kadane – sous-tableau maximal.
 
-### 3. [Minimum Effort Path – Dijkstra Minimax.md](Minimum%20Effort%20Path%20–%20Dijkstra%20Minimax.md)
-Minimisation du maximum d’une arête sur un chemin (minimax).
-
 ---
 
-# 🔍 Backtracking
+## 🔍 Backtracking
 
 ### 1. [Combinations.md](Combinations.md)
-Génération de toutes les combinaisons dont la somme = target.
+
+Combinaisons dont la somme atteint un target.
 
 ### 2. [MaxUniqueSplit.md](MaxUniqueSplit.md)
-Découpage maximal de chaîne en sous-chaînes uniques.
+
+Découpage maximal d’une chaîne en sous-chaînes uniques.
 
 ---
 
-# 🧱 Grilles & Recherche 2D
+## 🧱 Grilles & Recherche 2D
 
 ### 1. [Flood Fill.md](Flood%20Fill.md)
-Fill récursif (DFS/BFS) – peindre une zone connexe.
+
+DFS/BFS appliqué aux matrices 2D.
 
 ---
 
-# 🎮 Jeux & Exploration d’Espace
+## 🎮 Jeux & Exploration d’Espace
 
 ### 1. [Tic-tac-toe.md](Tic-tac-toe.md)
-Exploration complète de l’espace de jeu + comptage de victoires.
+
+Exploration complète de l’espace de jeu.
+
+### 2. [Minimax & Alpha-Beta Pruning.md](Minimax%20&%20Alpha-Beta%20Pruning.md)
+
+Décision optimale dans les jeux adversariaux.
 
 ---
 
-# 🧠 Problèmes Combinatoires / Branch & Bound
+## 🧠 Problèmes Combinatoires / Branch & Bound
 
 ### 1. [Best Organization.md](Best%20Organization.md)
-Répartition optimale des tâches – Branch & Bound.
+
+Répartition optimale de tâches – Branch & Bound.
 
 ---
 
-# 📌 Conseils d'utilisation
+## 🧰 Outils & Patterns transversaux
 
-- Garde ce fichier ouvert comme panneau de navigation pendant que tu codes.
-- Les catégories te permettent de retrouver immédiatement l’approche adaptée :
-  - **Graphes** → chemins, composantes, propagation.
-  - **Arbres** → diamètres, pruning, MST.
-  - **Greedy** → optimisations en O(n).
-  - **Backtracking** → explorations exhaustives.
-  - **DP** → optimisation sur séquences.
-  - **Grilles** → DFS/BFS sur 2D.
-  - **Branch & Bound** → optimisation combinatoire.
+### 1. [Path Reconstruction.md](Path%20Reconstruction.md)
 
+Reconstruction d’un chemin optimal (BFS, Dijkstra, etc.).
+
+### 2. [Binary Search – Patterns.md](Binary%20Search%20–%20Patterns.md)
+
+Recherche binaire sur tableaux et espace des réponses.
+
+### 3. [Two Pointers & Sliding Window.md](Two%20Pointers%20&%20Sliding%20Window.md)
+
+Optimisation linéaire sur tableaux et chaînes.
+
+---
+
+## 📌 Conseils d’utilisation
+
+* Utilise ce README comme **panneau de navigation principal**.
+* Identifie d’abord la **nature du problème** :
+
+  * graphe, arbre, grille, jeu, séquence…
+* Puis choisis le **paradigme** :
+
+  * BFS / DFS / Greedy / DP / Backtracking.
+* Les fichiers sont conçus pour être :
+
+  * relus avant un examen,
+  * réutilisés comme templates,
+  * comparés entre eux.
